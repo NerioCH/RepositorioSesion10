@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S07</title>
+    <style>
+        input, button, textarea {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>EJERCICIO 1</h1>
+        <h2>De 5 números diferentes encontrar mayor, menor y tercer menor</h2>
+        <div>
+            <h3>Ingresa 5 números:</h3>
+            <input type="number" id="ej1_numero1">
+            <input type="number" id="ej1_numero2">
+            <input type="number" id="ej1_numero3">
+            <input type="number" id="ej1_numero4">
+            <input type="number" id="ej1_numero5">
+            <button type="button" onclick="ejercicio1()">Calcular</button>
+            <h3>Resultado:</h3>
+            <input readonly type="text" id="ej1_salida" style="width: 500px">
+        </div>
+    </div>
+
+    <div>
+        <h1>EJERCICIO 2</h1>
+        <h2>Número comprendido entre 1000 y 9999, encontrar suma de digitos impares</h2>
+        <div>
+            <h3>Ingresa un número:</h3>
+            <input type="number" id="ej2_numero1">
+            <button type="button" onclick="SumarImpares()">Calcular</button>
+            <h3>Resultado:</h3>
+            <input readonly type="text" id="ej2_salida" style="width: 500px">
+        </div>
+    </div>
+
+
+    <div>
+        <h1>EJERCICIO 3</h1>
+        <h2>Convertir una cantidad de Soles a Dolares y de Dolares a Euros</h2>
+        <p>Inserte el Monto en Soles</p>
+        <textarea id="Soles"></textarea>
+        <P id="Dolares"></p>
+        <p id="Euros"></p>
+        <button type="button" onclick="Moneda()">Convertir</button>
+        <p>Inserte el Monto en Dolares</p>
+        <textarea id="Dolares1"></textarea>
+        <P id="Euros1"></p>
+        <p id="Soles1"></p>
+        <button type="button" onclick="Moneda1()">Convertir</button>
+    </div>
+
+    <div>
+        <h1>EJERCICIO 4</h1>
+        <h2>Número de 5 cifras, encontrar suma de digitos no primos e impares</h2>
+        <div>
+            <h3>Ingresa un número:</h3>
+            <input type="number" id="ej4_numero">
+            <button type="button" onclick="SumaNoPrimosImpares()">Calcular</button>
+            <h3>Resultado:</h3>
+            <input readonly type="text" id="ej4_salida" style="width: 500px">
+        </div>
+    </div>
+
+    <script src="funciones.js"></script>
+</body>
+</html>
